@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>Libros </title>
+    
+</head>
+<body>
+<div class="bg-purple-200 min-h-screen">
+
+<header id="header" class="header">
+    <div class="three columns u-pull-right bg-right-top">
+        <ul>
+          <li class="submenu">
+            <img src="cart.png" class="ml-auto" alt="Carrito de Compras" onclick="toggleCarrito()">
+            <div id="carritoMenu" class="bg-white w-50 ml-auto">
+              <h2>Carrito</h2>
+              <div id="carrito"></div>
+              <p>Total: $<span id="total">0</span></p>
+            </div>
+            <div id="carrito">
+            
+
+          </li>
+        </ul>
+      </div>
+    </header>
+    
+    <div class="grid grid-cols-3 gap-4">
+                    <div class="info-card">
+                        <h4  class="text-5xl mt-20">'Paula'</h4>
+                        <p class="font-semibold italic">De: Isabel Allende</p>
+                        <img src="https://images.cdn2.buscalibre.com/fit-in/360x360/94/c0/94c04b20b9d3c4136626379864a65589.jpg " class="w-80 h-50 object-cover">
+                        <p class="precio text-2xl">$36.000  <span class="u-pull-right "></span></p>
+                        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded hover"
+                        onclick="agregarAlCarrito('Paula', 'Isabel Allende', 36000)">
+                        Agregar al carrito
+                      </button>
+                    </div>
+
+                    <div class="info-card">
+                        <h4 class="text-5xl mt-20"> 'Desconexion'</h4>
+                        <p class="font-semibold italic">De: Neal Shusterman</p>
+                        <img src="https://4.bp.blogspot.com/-omWhu1-JEBo/Vaj_p4JfKiI/AAAAAAAAHfQ/BkubErteGVo/s1600/desconexion-neal-shusterman.png" class="w-80 h-50 object-cover">
+                        <p class="precio text-2xl">$15.000  <span class="u-pull-right "></span></p>
+                        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded hover"
+                        onclick="agregarAlCarrito('Desconexion', 'Neal Shusterman', 15000)">
+                        Agregar al carrito
+                      </button>   
+                    </div>
+
+                    <div class="info-card">
+                        <h2 class="text-5xl mt-20">'Los Elementales'</h2>
+                        <p class="font-semibold italic">De: Michael McDowell</p>
+                        <img src="https://acdn.mitiendanube.com/stores/001/228/817/products/los-elementales-michael-mcdowell1-d1b198ada2df0bd3af16077766434569-640-0.jpg " class="w-80 h-50 object-cover">
+                        <p class="precio text-2xl">$32.000  <span class="u-pull-right "></span></p>
+                        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded hover"
+                        onclick="agregarAlCarrito('Los Elementales', 'Michael McDowell', 32000)">
+                        Agregar al carrito
+                      </button>
+                    </div>
+
+                    <div class="info-card">
+                        <h2 class="text-5xl mt-20">'Los Juegos del Hambre'</h2>
+                        <p class="font-semibold italic">De: Suzanne Collins </p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK0s2-lkDLtQTyBCsZ54a5ZCT75R3B-20xyw&s" class="w-80 h-50 object-cover">
+                        <p class="precio text-2xl">$40.000  <span class="u-pull-right "></span></p>
+                        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded hover"
+                        onclick="agregarAlCarrito('Los Juegos del Hambre', 'Suzanne Collins ', 40000)">
+                        Agregar al carrito
+                      </button> 
+                    </div>
+
+                    <div class="info-card">
+                        <h2 class="text-5xl mt-20">'El Planeta de Los Simios'</h2>
+                        <p class="font-semibold italic">De: Pierre Boulle </p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR95FkSagGknQ6Yiy9JVBJtokunNUqbKEGmgQ&s" class="w-80 h-50 object-cover">
+                        <p class="precio text-2xl">$35.000  <span class="u-pull-right "></span></p>
+                        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded hover"
+                        onclick="agregarAlCarrito('El Planeta de Los Simios', 'Pierre Boulle ', 35000)">
+                        Agregar al carrito
+                      </button>
+                    </div>
+
+                    <div class="info-card">
+                        <h2 class="text-5xl mt-20">'La mas Callada de la Clase'</h2>
+                        <p class="font-semibold italic">De: Sergio Aguirre </p>
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_757273-MLA51164975735_082022-O.webp" class="w-80 h-50 object-cover">
+                        <p class="precio text-2xl">$15.000  <span class="u-pull-right "></span></p>
+                        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded hover"
+                        onclick="agregarAlCarrito('La mas Callada de la Clase', 'Sergio Aguirre', 15000)">
+                        Agregar al carrito
+                      </button>  
+                    </div>
+                </div>
+</body>
+</div>
+
+<footer> 
+    <script src="carrito.js"></script>
+</footer>
+
+</html>
